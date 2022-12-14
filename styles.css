@@ -23,14 +23,43 @@ header {
 h1 {
   color: #f1be32;
   font-size: min(5vw, 1.2em);
+  text-align: center;
 }
-
+main {
+  padding-top: 25px;
+}
+section {
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
 h1,
 h2 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 h2 {
   border-bottom: 4px solid #dfdfe2;
+  margin-top: 0px;
+  padding-top: 60px;
+}
+.info {
+  padding: 1px 0 0 1px;
+}
+
+.info input {
+  width: 50%;
+  text-align: left;
+}
+
+.info > label {
+  width: 10%;
+  min-width: 55px;
+  text-align: right;
+}
+.info > label,
+.info > input {
+  display: inline-block;
 }
 nav {
   width: 50%;
@@ -41,6 +70,11 @@ nav {
 nav > ul {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
+  padding-inline-start: 0;
+  margin-block: 0;
+  height: 100%;
+  flex-wrap: wrap;
 }
 nav > ul > li {
   color: #dfdfe2;
@@ -72,4 +106,46 @@ li > a {
 }
 p::before {
   content: "Question #";
+}
+p {
+  margin-top: 5px;
+  padding-left: 15px;
+  font-size: 20px;
+}
+.formrow {
+  margin-top: 30px;
+  padding: 0px 15px;
+}
+
+input {
+  font-size: 16px;
+}
+.question-block {
+  text-align: left;
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  padding-top: 5px;
+}
+.question {
+  border: none;
+  padding-bottom: 0;
+}
+.answers-list {
+  list-style: none;
+  padding: 0;
+}
+button {
+  display: block;
+  margin: 40px auto;
+  width: 40%;
+  padding: 15px;
+  font-size: 23px;
+  background: #d0d0d5;
+  border: 3px solid #3b3b4f;
+}
+footer {
+  background-color: #2a2a40;
+  justify-content: center;
+  display: flex;
 }
